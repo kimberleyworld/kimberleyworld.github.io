@@ -33,6 +33,9 @@ header {
 .email {
 	color: #808080;
 }
+.about {
+	margin: 10%;
+}
 
 @media screen and (max-width: 380px){
 	nav {
@@ -55,4 +58,11 @@ header {
 	header {
 		color: #FB88BC;
 	}
+}
+@media screen and (min-width: 950px){
+	header {
+		background-color:red;
+		margin: 0 10%;
+	}
+
 }
