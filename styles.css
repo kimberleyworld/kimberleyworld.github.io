@@ -12,7 +12,6 @@ nav {
 }
 .pages {
 	width: 150px;
-	background-color: pink;
 	display: flex;
 	justify-content: space-between;
 }
