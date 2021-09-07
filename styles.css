@@ -24,4 +24,25 @@ a {
 	text-decoration: none;
 	color: #D685FF;
 	cursor: pointer;
+
+}
+
+@media screen and (max-width: 380px){
+	nav {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		text-align: center;
+	}
+	.pages {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+	a {
+		padding: 5px;
+	}
+	.title {
+		display: none;
+	}
 }
