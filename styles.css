@@ -24,7 +24,14 @@ a {
 	text-decoration: none;
 	color: #D685FF;
 	cursor: pointer;
-
+}
+header {
+	margin: 10%;
+	text-align: center;
+	color: #D685FF;
+}
+.email {
+	color: #808080;
 }
 
 @media screen and (max-width: 380px){
