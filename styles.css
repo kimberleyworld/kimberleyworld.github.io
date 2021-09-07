@@ -52,4 +52,7 @@ header {
 	.title {
 		display: none;
 	}
+	header {
+		color: #FB88BC;
+	}
 }
