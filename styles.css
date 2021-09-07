@@ -1,17 +1,26 @@
 * {
 	box-sizing: border-box;
+	
 }
 body {
 	margin: 0;
+	background-color: #F9F5E3;
+	font-family: Verdana, sans-serif;
 }
 nav {
 	margin: 20px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center; 
+	color: #FB88BC;
 }
 .pages {
 	width: 150px;
 	display: flex;
 	justify-content: space-between;
+	text-decoration: none;
+}
+a {
+	text-decoration: none;
+	color: #D685FF;
 }
