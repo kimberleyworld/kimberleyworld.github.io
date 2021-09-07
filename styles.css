@@ -29,9 +29,16 @@ header {
 	margin: 10%;
 	text-align: center;
 	color: #D685FF;
+	font-size: 16pt;
 }
 .email {
 	color: #808080;
+}
+.about {
+	margin: 10%;
+	color: #808080;
+	line-height: 1.6;
+	font-size: 13pt;
 }
 
 @media screen and (max-width: 380px){
@@ -54,5 +61,15 @@ header {
 	}
 	header {
 		color: #FB88BC;
+		font-size: 14pt;
 	}
+}
+@media screen and (min-width: 950px){
+	header {
+		margin: 5% 10%;
+	}
+	.about {
+		margin: 0 10%;
+	}
+
 }
