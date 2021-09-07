@@ -23,4 +23,5 @@ nav {
 a {
 	text-decoration: none;
 	color: #D685FF;
+	cursor: pointer;
 }
