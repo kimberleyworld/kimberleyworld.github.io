@@ -79,11 +79,11 @@ img {
 	margin: 0 20px;
 }
 
-.text-content p {
+.textContent p {
 	margin-top: 0;
 }
 
-.text-content {
+.textContent {
 	display: flex;
 	justify-content: space-between;
 }
