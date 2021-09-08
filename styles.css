@@ -27,7 +27,7 @@ a {
 	cursor: pointer;
 }
 header {
-	margin: 10%;
+	margin: 25% 10%;
 	text-align: center;
 	color: #D685FF;
 	font-size: 16pt;
@@ -35,6 +35,9 @@ header {
 		background-image: url('flowers.png');
 		background-size: cover;
 	*/
+}
+h1 {
+	margin-top: 20px;
 }
 .email {
 	color: #808080;
@@ -138,14 +141,14 @@ img {
 
 
 @media screen and (min-width: 950px){
-	header {
-		margin: 5% 10%;
-	}
 	.about {
 		margin: 0 10%;
 	}
 	body {
 		margin: 50px;
+	}
+	header {
+		margin: 15% 10%;
 	}
 
 }
