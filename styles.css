@@ -36,58 +36,61 @@ header {
 		background-size: cover;
 	*/
 }
-
 .email {
 	color: #808080;
 }
 .about {
 	margin: 10%;
+	margin-top: 0;
+	margin-bottom: 20px;
 	color: #808080;
 	line-height: 1.6;
 	font-size: 13pt;
 }
 
-article {
+h2 {
 	margin: 10%;
+	margin-top: 100px;
+	margin-bottom: 10px;
+	color: #FB88BC;
+	font-size: 30pt;
+}
+article {
+	margin: 5% 10%;
 	color: #808080;
 	line-height: 1.6;
 	font-size: 13pt;
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
-	
 }
-
 img {
 	border-radius: 8px;
 	max-width: 45%;
 	height: auto;
 }
-
 .projectInfo {
 	margin-right: 40px;
-}
-
-.projectTitle {
 	color: #FB88BC;
-	
 }
-
+.projectTitle {
+	font-weight: bold;
+	width: 90px;
+	cursor: pointer;
+}
 .projectDescription {
 	max-width: 250px;
 	min-width: 150px;
 	margin: 0 20px;
 }
-
 .textContent p {
 	margin-top: 0;
+	margin-bottom: 0;
 }
-
 .textContent {
 	display: flex;
 	justify-content: space-between;
 }
-
 
 @media screen and (max-width: 740px){
 	article {
@@ -101,6 +104,10 @@ img {
 		order: -1;
 		margin: 0 auto;
 		max-width: 100%;
+		cursor: pointer;
+	}
+	.textContent {
+		margin-top: 20px;
 	}
 }
 
