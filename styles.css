@@ -6,6 +6,8 @@ body {
 	margin: 0;
 	background-color: #F9F5E3;
 	font-family: Verdana, sans-serif;
+	
+	
 }
 nav {
 	margin: 20px;
@@ -30,7 +32,12 @@ header {
 	text-align: center;
 	color: #D685FF;
 	font-size: 16pt;
+	/* 
+		background-image: url('flowers.png');
+		background-size: cover;
+	*/
 }
+
 .email {
 	color: #808080;
 }
@@ -70,6 +77,9 @@ header {
 	}
 	.about {
 		margin: 0 10%;
+	}
+	body {
+		margin: 50px;
 	}
 
 }
