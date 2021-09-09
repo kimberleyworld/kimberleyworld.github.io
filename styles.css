@@ -64,7 +64,6 @@ article {
 	line-height: 1.6;
 	font-size: 13pt;
 	display: flex;
-	justify-content: space-between;
 	align-items: flex-start;
 }
 img {
