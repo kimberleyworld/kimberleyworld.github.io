@@ -117,6 +117,11 @@ img {
 	font-size: 20px;
 }
 
+.bow {
+	font-size: 20px;
+}
+
+
 @media screen and (max-width: 740px){
 	article {
 		flex-direction: column;
@@ -138,18 +143,20 @@ img {
 
 @media screen and (max-width: 380px){
 	nav {
-		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
-		text-align: center;
 	}
 	.pages {
 		display: flex;
 		flex-direction: column;
+	}
+	.pages a {
 		text-align: center;
+		width: 100%;
+		font-size: 20px;
 	}
 	a {
-		padding: 5px;
+		padding: 10px;
+		text-decoration: none;
 	}
 	.title {
 		display: none;
