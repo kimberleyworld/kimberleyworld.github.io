@@ -4,7 +4,7 @@
 
 body {
 	margin: 0;
-	background-color: #F9F5E3;
+	background-color: #F2F7F2;
 	font-family: Verdana, sans-serif;
 }
 
@@ -25,6 +25,7 @@ a {
 	text-decoration: none;
 	color: #D685FF;
 	cursor: pointer;
+	width: 50px;
 }
 header {
 	margin: 25% 10%;
@@ -40,13 +41,13 @@ h1 {
 	margin-top: 20px;
 }
 .email {
-	color: #808080;
+	color: #3E3B3F;
 }
 .about {
 	margin: 10%;
 	margin-top: 0;
 	margin-bottom: 20px;
-	color: #808080;
+	color: #3E3B3F;
 	line-height: 1.6;
 	font-size: 13pt;
 }
@@ -60,7 +61,7 @@ h2 {
 }
 article {
 	margin: 5% 10%;
-	color: #808080;
+	color: #3E3B3F;
 	line-height: 1.6;
 	font-size: 13pt;
 	display: flex;
@@ -92,6 +93,22 @@ img {
 .textContent {
 	display: flex;
 	justify-content: space-between;
+}
+.foot {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+	display: flex;
+	justify-content: center;
+}
+.footInfo {
+	width: 500px;
+}
+
+#linkedIn {
+	width: 50px;
 }
 
 @media screen and (max-width: 740px){
