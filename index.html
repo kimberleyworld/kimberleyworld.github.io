@@ -4,9 +4,12 @@
 		<title>Kimberley Dobney Portfolio</title>
 		<link type="text/css" rel="stylesheet" href="normalize.css">
 		<link type="text/css" rel="stylesheet" href="styles.css">
+		<script defer src="modal.js"></script>
 		<meta name="viewport" content="width=device-width,
 		 initial-scale=1.0">
 		<script src="https://kit.fontawesome.com/735591ef64.js" crossorigin="anonymous"></script>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			  rel="stylesheet">
 	</head>
 	<body>
 		<nav>
@@ -16,111 +19,149 @@
 				<a href="#projects">projects</a>
 			</div>
 		</nav>
+		<div id="page">
 		
-		<header>
-			<h1>fun things i've made whilst learning to be a web dev</h1>
-			<a href="mailto:kim.dobney@yahoo.co.uk" target="_blank" class="email">
-				<p class="email">kim.dobney@yahoo.co.uk</p>
-			</a>
-		</header>
-		
-		<h2 id="about">about</h2>
-		
-		<section class="about">
-			<p>Nice to meet you, I'm kimberley and I'm learning to code. I'm currently on the IO academy and should graduate in December 2021. Before joining the academy I've been busy doing a number of different things, from product design engineering and model making to starting a menstrual waste composting organisation (turnandflow.org). I decided to move over to web development so that I can gain a new set of tools for creativity. Websites, applications, visual effects, lighting displays, who knows where these skills will take me but I'm enjoying the challenge and it's very exciting!
-			</p>
-		</section>
-		
-		<h2 id="projects">projects</h2>
-	
-		<article>
-			<div class="textContent">
-				<div class="projectInfo">
-					<a href="#">
-						<p class="projectTitle">project 1</p>
-					</a>
-					<p>08/09/21</p>
-					<a href="#">
-						<i class="fab fa-github icon">    github</i>
-					</a>
-				</div>
-			
-				<div class="projectDescription">
-					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-				</div>
-			</div>
-			
-				<img src="cloudOne.jpg" alt="Clouds in the sky">
-		</article>
-		
-		<article>
-			<div class="textContent">
-				<div class="projectInfo">
-					<a href="#">
-						<p class="projectTitle">project 2</p>
-					</a>
-					<p>08/09/21</p>
-					<a href="#">
-						<i class="fab fa-github icon">    github</i>
-					</a>
-				</div>
-			
-				<div class="projectDescription">
-					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-				</div>
-			</div>
-			
-				<img src="cloudTwo.jpg" alt="Clouds in the sky">
-		</article>
-		
-		<article>
-			<div class="textContent">
-				<div class="projectInfo">
-					
-					<a href="#">
-						<p class="projectTitle">project 3</p>
-					</a>
-					<p>08/09/21</p>
-					<a href="#"><i class="fab fa-github icon">    github</i></a>
-				</div>
-			
-				<div class="projectDescription">
-					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-				</div>
-			</div>
-			
-				<img src="cloudThree.jpg" alt="Clouds in the sky">
-		</article>
-		
-		<article>
-			<div class="textContent">
-				<div class="projectInfo">
-					<a href="#">
-						<p class="projectTitle">project 4</p>
-					</a>
-					<p>08/09/21</p>
-					<a href="#" target="_blank"><i class="fab fa-github icon">    github</i></a>
-				</div>
-			
-				<div class="projectDescription">
-					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-				</div>
-			</div>
-			
-				<img src="cloudFour.jpg" alt="Clouds in the sky">
-		</article>
-		
-		
-		<section class="foot">
-			<div class="footInfo">
-				<h2>get in touch:</h2>
-				<p class="email">kim.dobney@yahoo.co.uk</p>
-				<a href="https://www.linkedin.com/in/kimberley-dobney-0b4a5815b/" target="_blank">
-					<i class="fab fa-linkedin icon"></i>
+			<header>
+				<img src="pc.png" alt="spinning computer animation" id="pcCartoon">
+				<h1>fun things i've made whilst learning to be a web dev</h1>
+				<a href="mailto:kim.dobney@yahoo.co.uk" target="_blank" class="email">
+					<p class="email">kim.dobney@yahoo.co.uk</p>
 				</a>
-				<i class="fas fa-rainbow bow"></i>
+			</header>
+
+			<h2 id="about">about</h2>
+
+			<section class="about">
+				<p>
+					Nice to meet you, I'm kimberley and I've just finished a four-month intensive Bootcamp in
+					full-stack software development with the IO academy. I studied product design engineering in my
+					undergrad and in my few years in the start-up side of the industry I created multiple brands, UI's for
+					websites and XD mockups for apps. I decided to move over to software development to gain a new set of
+					tools for creativity. Websites, applications, visual effects, lighting displays, who knows where these
+					skills will take me but I'm enjoying the challenge and it's very exciting!
+				</p>
+			</section>
+
+			<h2 id="projects">Software Development Projects</h2>
+<!--////////// Muppets Project //////// -->
+			<article>
+				<div class="textContent">
+					<div class="projectInfo">
+						<a href="https://dev.io-academy.uk/projects/2021-aug/OOPMuppets/" target="_blank">
+							<p class="projectTitle">Muppet OOP listing app</p>
+						</a>
+						<a href="https://github.com/iO-Academy/2021-aug-oopMuppets" target="_blank">
+							<i class="fab fa-github icon"></i>
+						</a>
+						<p class="date">09/21</p>
+					</div>
+
+					<div class="projectDescription">
+						<p>
+							Displays all muppets in a UI builtinline with a created wireframe. Allows users to click on
+							individual muppets to reveal more information, search for specific muppets by name (including
+							partial text searches) and bring up more information about a random muppet.
+						</p>
+						<button id="modalButtonMuppets" type="button">Build Details</button>
+					</div>
+				</div>
+
+					<img src="muppets.png" alt="Image of all the muppets">
+			</article>
+<!--////Paperweight world//////-->
+			<article>
+				<div class="textContent">
+					<div class="projectInfo">
+						<a href="http://localhost:1234/weekFive/kimberley-collection/index.php" target="_blank">
+							<p class="projectTitle">Paper-Weight World</p>
+						</a>
+						<a href="https://github.com/kimberleyworld/kimberley-collection" target="_blank">
+							<i class="fab fa-github icon"></i>
+						</a>
+						<p class="date">09/21</p>
+					</div>
+
+					<div class="projectDescription">
+						<p>
+							A responsive app to view, and contribute through a HTML form, to a collection of paperweights.
+						</p>
+						<button id="modalButtonMuppets" type="button">Build Details</button>
+					</div>
+				</div>
+
+				<img src="muppets.png" alt="Image of all the muppets">
+			</article>
+<!--			//////////planetSite//////////-->
+			<article>
+				<div class="textContent">
+					<div class="projectInfo">
+						<a href="#">
+							<p class="projectTitle">project 4</p>
+						</a>
+						<p>08/09/21</p>
+						<a href="#" target="_blank"><i class="fab fa-github icon">    github</i></a>
+					</div>
+
+					<div class="projectDescription">
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					</div>
+				</div>
+
+					<img src="cloudFour.jpg" alt="Clouds in the sky">
+			</article>
+
+			<h2 id="projects">Design Projects</h2>
+
+			<article>
+				<div class="textContent">
+					<div class="projectInfo">
+						<a href="#">
+							<p class="projectTitle">project 1</p>
+						</a>
+						<p>08/09/21</p>
+						<a href="#">
+							<i class="fab fa-github icon">    github</i>
+						</a>
+					</div>
+
+					<div class="projectDescription">
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					</div>
+				</div>
+
+				<img src="cloudOne.jpg" alt="Clouds in the sky">
+			</article>
+
+
+			<div class="foot">
+				<div class="footInfo">
+					<h2>get in touch:</h2>
+					<p class="email">kim.dobney@yahoo.co.uk</p>
+					<a href="https://www.linkedin.com/in/kimberley-dobney-0b4a5815b/" target="_blank">
+						<i class="fab fa-linkedin icon"></i>
+					</a>
+					<i class="fas fa-rainbow bow"></i>
+				</div>
 			</div>
-		</section>
-	
+		</div>
+<!--		///////muppetModal////////-->
+			<article id="modalPopup">
+				<div class="modalDivs">
+					<img src="muppetWireframe.png" alt="wireframe for muppet site">
+					<div class="modelContent">
+						<button id="closeModal" type="button" class="btn btn-light">
+							<i class="closeIcon material-icons" >close</i>
+						</button>
+						<h3>Build</h3>
+						<p>We created this app in OOP applying SOLID principles where possible. I worked on designing,
+							creating and implementing the wireframes. As well as the hydrator/entity classes to
+							receive and display data from a SQL database. The project utilised autoloading and
+							namespacing throughout, validated and sanitised all user inputs before database insertion
+							and unit tested our methods with PHPUnit.
+						</p>
+					</div>
+				</div>
+			</article>
+
 	</body>
 </html>
