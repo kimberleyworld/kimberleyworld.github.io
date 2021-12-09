@@ -13,7 +13,7 @@
 	</head>
 	<body>
 		<nav>
-			<h4 class="title">Kimberley Dobney Portfolio</h4>
+			<h4 class="navTitle">Kimberley Dobney Portfolio</h4>
 			<div class="pages">
 				<a href="#about">about</a>
 				<a href="#projects">projects</a>
@@ -22,14 +22,15 @@
 		<div id="page">
 		
 			<header>
-				<img src="pc.png" alt="spinning computer animation" id="pcCartoon">
-				<h1>fun things i've made whilst learning to be a web dev</h1>
+				<img class="blackAndWhite spiningSvg" src="./Images/pc.png" alt="spinning computer animation" id="pcCartoon">
+				<h1>Software Dev in the making</h1>
 				<a href="mailto:kim.dobney@yahoo.co.uk" target="_blank" class="email">
+
 					<p class="email">kim.dobney@yahoo.co.uk</p>
 				</a>
 			</header>
 
-			<h2 id="about">about</h2>
+			<h2 id="about">About</h2>
 
 			<section class="about">
 				<p>
@@ -57,6 +58,8 @@
 					</div>
 
 					<div class="projectDescription">
+						<p class="smallTitle">SCRUM project - team of 8</p>
+						<p class="subtleTitle">PHP, OOP, SQL, HTML and CSS</p>
 						<p>
 							Displays all muppets in a UI builtinline with a created wireframe. Allows users to click on
 							individual muppets to reveal more information, search for specific muppets by name (including
@@ -66,7 +69,7 @@
 					</div>
 				</div>
 
-					<img src="muppets.png" alt="Image of all the muppets">
+					<img src="./Images/muppets.png" alt="Image of all the muppets">
 			</article>
 <!--////Paperweight world//////-->
 			<article>
@@ -82,55 +85,99 @@
 					</div>
 
 					<div class="projectDescription">
+						<p class="smallTitle">Collection App (Indevidual Project) </p>
+						<p class="subtleTitle">PHP, SQL, HTML, CSS </p>
 						<p>
 							A responsive app to view, and contribute through a HTML form, to a collection of paperweights.
 						</p>
-						<button id="modalButtonMuppets" type="button">Build Details</button>
+						<button id="modalButtonPWWorld" type="button">Build Details</button>
 					</div>
 				</div>
 
-				<img src="muppets.png" alt="Image of all the muppets">
+				<img src="./Images/desktopPWWorld.png" alt="Paperweight world screenshot">
 			</article>
 <!--			//////////planetSite//////////-->
 			<article>
 				<div class="textContent">
 					<div class="projectInfo">
-						<a href="#">
-							<p class="projectTitle">project 4</p>
+						<a href="" target="_blank">
+							<p class="projectTitle">Planet Fact Site</p>
 						</a>
-						<p>08/09/21</p>
-						<a href="#" target="_blank"><i class="fab fa-github icon">    github</i></a>
+						<a href="" target="_blank">
+							<i class="fab fa-github icon"></i>
+						</a>
+						<a href="">
+							<i class="fas fa-link"></i>
+						</a>
+						<p class="date">11/21</p>
 					</div>
 
 					<div class="projectDescription">
-						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						<p class="smallTitle">React API App (Individual Project) </p>
+						<p class="subtleTitle">JavaScript, React, CSS, HTML</p>
+						<p>
+							An 8-page fact site for all the planets in the solar system using functional react.
+						</p>
+						<button id="modalButtonPlanet" type="button">Build Details</button>
 					</div>
 				</div>
 
-					<img src="cloudFour.jpg" alt="Clouds in the sky">
+				<img src="./Images/PlanetsDesktop.png" alt="Screenshot of the planets">
 			</article>
 
-			<h2 id="projects">Design Projects</h2>
+<!--			//////////SnakeSweeper//////////-->
 
 			<article>
 				<div class="textContent">
 					<div class="projectInfo">
-						<a href="#">
-							<p class="projectTitle">project 1</p>
+						<a href="http://localhost:1234/weekSeven/2021-aug-minesweeper/index.html" target="_blank">
+							<p class="projectTitle">Snake Sweeper</p>
 						</a>
-						<p>08/09/21</p>
-						<a href="#">
-							<i class="fab fa-github icon">    github</i>
+						<a href="https://github.com/iO-Academy/2021-aug-minesweeper" target="_blank">
+							<i class="fab fa-github icon"></i>
 						</a>
+						<p class="date">11/21</p>
 					</div>
 
 					<div class="projectDescription">
-						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						<p class="smallTitle">JavaScript Game (SCRUM project - team of 8)</p>
+						<p class="subtleTitle">JavaScript, HTML, CSS</p>
+						<p>
+							A game where users must find all the lynx in the forest before they run
+							out of lives or get bitten by too many snakes. The size of the forest and the
+							amount of lynx is defined by the user and is randomly generated at the start of
+							each game. We also added functionality to keep track of the current score and
+							remaining lives.
+
+						</p>
+						<button id="modalButtonSnakeSweeper" type="button">Build Details</button>
 					</div>
 				</div>
 
-				<img src="cloudOne.jpg" alt="Clouds in the sky">
+				<img src="./Images/sweeperLoosingScreen.png" alt="Screenshot of the snake sweeper">
 			</article>
+
+<!--			<h2 id="projects">Design Projects</h2>-->
+
+<!--			<article>-->
+<!--				<div class="textContent">-->
+<!--					<div class="projectInfo">-->
+<!--						<a href="#">-->
+<!--							<p class="projectTitle">project 1</p>-->
+<!--						</a>-->
+<!--						<p>08/09/21</p>-->
+<!--						<a href="https://github.com/kimberleyworld/ThePlanets">-->
+<!--							<i class="fab fa-github icon">    github</i>-->
+<!--						</a>-->
+<!--					</div>-->
+
+<!--					<div class="projectDescription">-->
+<!--						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>-->
+<!--					</div>-->
+<!--				</div>-->
+
+<!--				<img src="PlanetsDesktop.png" alt="Screenshot of the planets">-->
+<!--			</article>-->
 
 
 			<div class="foot">
@@ -147,7 +194,7 @@
 <!--		///////muppetModal////////-->
 			<article id="modalPopup">
 				<div class="modalDivs">
-					<img src="muppetWireframe.png" alt="wireframe for muppet site">
+					<img src="Images/muppetWireframe.png" alt="wireframe for muppet site">
 					<div class="modelContent">
 						<button id="closeModal" type="button" class="btn btn-light">
 							<i class="closeIcon material-icons" >close</i>
@@ -162,6 +209,63 @@
 					</div>
 				</div>
 			</article>
+
+		<!--		///////PWWorldModal////////-->
+			<article id="modalPopupPWWorld">
+				<div class="modalDivs">
+					<img src="Images/MobilePWWorld.png" alt="wireframe for muppet site">
+					<div class="modelContent">
+						<button id="closeModalPWWorld" type="button" class="btn btn-light">
+							<i class="closeIcon material-icons" >close</i>
+						</button>
+						<h3>Build</h3>
+						<p>I designed a set of wireframes and made them responsive using media queries at
+							various common breakpoints. The paperweights are stored in a Sequel Pro Database
+							and accessed through multiple fetch requests. Users input new items using a form
+							so all inputs are sanitised before entering the database. All functions created in
+							the project were successfully unit tested.
+						</p>
+					</div>
+				</div>
+			</article>
+
+		<!--		///////PlanetsMdal////////-->
+		<article id="modalPopupPlanets">
+			<div class="modalDivs">
+<!--				<img src="MobilePWWorld.png" alt="wireframe for muppet site">-->
+				<div class="modelContent">
+					<button id="closeModalPlanets" type="button" class="btn btn-light">
+						<i class="closeIcon material-icons" >close</i>
+					</button>
+					<h3>Build</h3>
+					<p>I replicated a detailed wireframe to produce the site. I displayed information about
+						the planets by fetching data from an API and storing it in the state. I created a
+						single planet component and passed in specific information to the instantiated
+						planets using props. I used routing to navigate between the 8 pages. This project is
+						still in progress.
+					</p>
+				</div>
+			</div>
+		</article>
+
+		<!--		///////SnakeSweeperModal////////-->
+		<article id="modalPopupSnakeSweeper">
+			<div class="modalDivs">
+				<img src="./Images/snakeSweeperTablet.png" alt="Screenshot of SnakeSweeper Tablet view">
+				<div class="modelContent">
+					<button id="closeModalSnakeSweeper" type="button" class="btn btn-light">
+						<i class="closeIcon material-icons" >close</i>
+					</button>
+					<h3>Build</h3>
+					<p>We manipulated the DOM using event listeners and conditionals to create the
+						interactive elements of the game. I focused on generating the randomised squares
+						when a new game is started and the functionality that triggers a Modal to appear if
+						the game is won/lost. A static band across the top of the screen records and displays the number
+						of lives used and the number of lives left.
+					</p>
+				</div>
+			</div>
+		</article>
 
 	</body>
 </html>
