@@ -4,7 +4,7 @@
 		<title>Kimberley Dobney Portfolio</title>
 		<link type="text/css" rel="stylesheet" href="normalize.css">
 		<link type="text/css" rel="stylesheet" href="styles.css">
-		<script defer src="modal.js"></script>
+		<script defer src="index.js"></script>
 		<meta name="viewport" content="width=device-width,
 		 initial-scale=1.0">
 		<script src="https://kit.fontawesome.com/735591ef64.js" crossorigin="anonymous"></script>
@@ -14,21 +14,33 @@
 	<body>
 		<nav>
 			<h4 class="navTitle">Kimberley Dobney Portfolio</h4>
+
 			<div class="pages">
 				<a href="#about">about</a>
 				<a href="#projects">projects</a>
 			</div>
 		</nav>
+
+
 		<div id="page">
 		
 			<header>
-				<img class="blackAndWhite spiningSvg" src="./Images/pc.png" alt="spinning computer animation" id="pcCartoon">
+				<img class="blackAndWhite spiningSvg" src="./images/pc.png" alt="spinning computer animation" id="pcCartoon">
 				<h1>Software Dev in the making</h1>
-				<a href="mailto:kim.dobney@yahoo.co.uk" target="_blank" class="email">
 
-					<p class="email">kim.dobney@yahoo.co.uk</p>
-				</a>
+					<a id="myEmail" class="tooltip">
+						<i class="fas fa-envelope"></i>
+						<span class="tooltiptext">Click to copy email</span>
+					</a>
 			</header>
+			<div class="coloursSwitchDiv">
+				<p>Make site clearer</p>
+				<label class="switch">Hey
+					<input type="checkbox">
+					<span class="slider"></span>
+				</label>
+			</div>
+
 
 			<h2 id="about">About</h2>
 
@@ -69,7 +81,7 @@
 					</div>
 				</div>
 
-					<img src="./Images/muppets.png" alt="Image of all the muppets">
+					<img src="./images/muppets.png" alt="Image of all the muppets">
 			</article>
 <!--////Paperweight world//////-->
 			<article>
@@ -94,19 +106,18 @@
 					</div>
 				</div>
 
-				<img src="./Images/desktopPWWorld.png" alt="Paperweight world screenshot">
+				<img src="./images/desktopPWWorld.png" alt="Paperweight world screenshot">
 			</article>
 <!--			//////////planetSite//////////-->
 			<article>
 				<div class="textContent">
 					<div class="projectInfo">
-						<a href="" target="_blank">
-							<p class="projectTitle">Planet Fact Site</p>
-						</a>
+
+						<p class="projectTitle">Planet Fact Site</p>
 						<a href="" target="_blank">
 							<i class="fab fa-github icon"></i>
 						</a>
-						<a href="">
+						<a href="" target="_blank">
 							<i class="fas fa-link"></i>
 						</a>
 						<p class="date">11/21</p>
@@ -122,7 +133,7 @@
 					</div>
 				</div>
 
-				<img src="./Images/PlanetsDesktop.png" alt="Screenshot of the planets">
+				<img src="./images/PlanetsDesktop.png" alt="Screenshot of the planets">
 			</article>
 
 <!--			//////////SnakeSweeper//////////-->
@@ -154,7 +165,65 @@
 					</div>
 				</div>
 
-				<img src="./Images/sweeperLoosingScreen.png" alt="Screenshot of the snake sweeper">
+				<img src="./images/sweeperLoosingScreen.png" alt="Screenshot of the snake sweeper">
+			</article>
+
+			<!--			//////////Acadaemy Portal//////////-->
+
+			<article>
+				<div class="textContent">
+					<div class="projectInfo">
+						<a href="http://localhost:1234/weekSeven/2021-aug-minesweeper/index.html" target="_blank">
+							<p class="projectTitle">Acadamy Portal Legacy Code</p>
+						</a>
+						<a href="https://github.com/iO-Academy/2021-aug-minesweeper" target="_blank">
+							<i class="fab fa-github icon"></i>
+						</a>
+						<p class="date">12/21</p>
+					</div>
+
+					<div class="projectDescription">
+						<p class="smallTitle">JavaScript Game (SCRUM project - team of 8)</p>
+						<p class="subtleTitle">Slim Framework, PHP, JS, CSS, HTML</p>
+						<p>
+							An app that replicates a prospective student applying to the IO academy.
+							This is a legacy project with a list of bugs that need to be fixed.
+
+						</p>
+						<button id="modalButtonAcademyPortal" type="button">Build Details</button>
+					</div>
+				</div>
+
+				<img src="./images/AccadamyPortal.png" alt="Screenshot of the accadamy portal">
+			</article>
+
+			<!--			//////////Listed//////////-->
+
+			<article>
+				<div class="textContent">
+					<div class="projectInfo">
+						<a href="http://localhost:1234/weekSeven/2021-aug-minesweeper/index.html" target="_blank">
+							<p class="projectTitle">Listed ToDo app</p>
+						</a>
+						<a href="https://github.com/iO-Academy/2021-aug-minesweeper" target="_blank">
+							<i class="fab fa-github icon"></i>
+						</a>
+						<p class="date">12/21</p>
+					</div>
+
+					<div class="projectDescription">
+						<p class="smallTitle">Full Stack, Individual project </p>
+						<p class="subtleTitle">NodeJS, MongoDB, JavaScript, Bootstrap, CSS, HTML</p>
+						<p>
+							Listed is a front end application and backend API that allows users
+							to write, add and delete items to a to-do list.
+
+						</p>
+						<button id="modalButtonToDo" type="button">Build Details</button>
+					</div>
+				</div>
+
+				<img src="./images/listed.png" alt="Screenshot of todo app">
 			</article>
 
 <!--			<h2 id="projects">Design Projects</h2>-->
@@ -182,19 +251,18 @@
 
 			<div class="foot">
 				<div class="footInfo">
-					<h2>get in touch:</h2>
+					<h2>Contact Details</h2>
 					<p class="email">kim.dobney@yahoo.co.uk</p>
 					<a href="https://www.linkedin.com/in/kimberley-dobney-0b4a5815b/" target="_blank">
 						<i class="fab fa-linkedin icon"></i>
 					</a>
-					<i class="fas fa-rainbow bow"></i>
 				</div>
 			</div>
 		</div>
 <!--		///////muppetModal////////-->
 			<article id="modalPopup">
 				<div class="modalDivs">
-					<img src="Images/muppetWireframe.png" alt="wireframe for muppet site">
+					<img src="images/muppetWireframe.png" alt="wireframe for muppet site">
 					<div class="modelContent">
 						<button id="closeModal" type="button" class="btn btn-light">
 							<i class="closeIcon material-icons" >close</i>
@@ -213,7 +281,7 @@
 		<!--		///////PWWorldModal////////-->
 			<article id="modalPopupPWWorld">
 				<div class="modalDivs">
-					<img src="Images/MobilePWWorld.png" alt="wireframe for muppet site">
+					<img src="./images/MobilePWWorld.png" alt="wireframe for paperweight world">
 					<div class="modelContent">
 						<button id="closeModalPWWorld" type="button" class="btn btn-light">
 							<i class="closeIcon material-icons" >close</i>
@@ -232,7 +300,6 @@
 		<!--		///////PlanetsMdal////////-->
 		<article id="modalPopupPlanets">
 			<div class="modalDivs">
-<!--				<img src="MobilePWWorld.png" alt="wireframe for muppet site">-->
 				<div class="modelContent">
 					<button id="closeModalPlanets" type="button" class="btn btn-light">
 						<i class="closeIcon material-icons" >close</i>
@@ -251,7 +318,7 @@
 		<!--		///////SnakeSweeperModal////////-->
 		<article id="modalPopupSnakeSweeper">
 			<div class="modalDivs">
-				<img src="./Images/snakeSweeperTablet.png" alt="Screenshot of SnakeSweeper Tablet view">
+				<img src="./images/snakeSweeperTablet.png" alt="Screenshot of SnakeSweeper Tablet view">
 				<div class="modelContent">
 					<button id="closeModalSnakeSweeper" type="button" class="btn btn-light">
 						<i class="closeIcon material-icons" >close</i>
@@ -262,6 +329,48 @@
 						when a new game is started and the functionality that triggers a Modal to appear if
 						the game is won/lost. A static band across the top of the screen records and displays the number
 						of lives used and the number of lives left.
+					</p>
+				</div>
+			</div>
+		</article>
+
+		<!--		///////AcademPortalModal////////-->
+		<article id="modalPopupAcademyPortal">
+			<div class="modalDivs">
+				<img src="./images/NextStageModal.png" alt="Screenshot of next stage modal in accadamy portal">
+				<div class="modelContent">
+					<button id="closeModalAcademyPortal" type="button" class="btn btn-light">
+						<i class="closeIcon material-icons" >close</i>
+					</button>
+					<h3>Build</h3>
+					<p> This is a legacy code base, built using Javascript and PHP in a slim framework.
+						We pair programmed to fix a bug that caused applicants to have student status even
+						if they weren't yet one. This was fixed by adjusting the conditional to a strict
+						equals operator. We then improved the UX of the 'next stage' modal to show the stage
+						the applicant was currently on and the stage they were moving to. To do this we
+						created a wireframe and worked with the existing colour pallet.
+					</p>
+				</div>
+			</div>
+		</article>
+
+		<!--		///////ToDoModal////////-->
+		<article id="modalPopupToDo">
+			<div class="modalDivs">
+				<img src="./images/listed.png" alt="Screenshot of todo app">
+				<div class="modelContent">
+					<button id="closeModalToDo" type="button" class="btn btn-light">
+						<i class="closeIcon material-icons" >close</i>
+					</button>
+					<h3>Build</h3>
+					<p> I started by creating the API using Node.js with the Express.js framework. Then
+						I created a collection of to-dos in MongoDB and accesses them using HTTP  verbs. I
+						checked the POST, DELETE and PUT requests using postman and Handlebars Templating
+						Engine to check the GET requests.
+
+						To give access to the API on the front end I installed CORS, then I built the front
+						end using Material UI components. Manipulating the DOM to make the app interactive.
+
 					</p>
 				</div>
 			</div>

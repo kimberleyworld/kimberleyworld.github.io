@@ -14,6 +14,14 @@ const modalButtonSnakeSweeper = document.getElementById('modalButtonSnakeSweeper
 const popupSnakeSweeper = document.getElementById('modalPopupSnakeSweeper')
 const closeModalSnakeSweeper = document.getElementById('closeModalSnakeSweeper')
 
+const modalButtonAcademyPortal = document.getElementById('modalButtonAcademyPortal')
+const popupAcademyPortal = document.getElementById('modalPopupAcademyPortal')
+const closeModalAcademyPortal = document.getElementById('closeModalAcademyPortal')
+
+const modalButtonToDo = document.getElementById('modalButtonToDo')
+const popupToDo = document.getElementById('modalPopupToDo')
+const closeModalToDo = document.getElementById('closeModalToDo')
+
 modalButtonMuppets.addEventListener('click', function (){
     popup.style.display = "flex";
     modalButtonMuppets.style.display = "none";
@@ -59,4 +67,33 @@ modalButtonSnakeSweeper.addEventListener('click', function (){
         document.getElementById('page').style.filter = "none";
     })
     document.getElementById('page').style.filter = "blur(2px)";
+})
+
+modalButtonAcademyPortal.addEventListener('click', function (){
+    console.log("clicked")
+    popupAcademyPortal.style.display = "flex";
+    modalButtonAcademyPortal.style.display = "none";
+    closeModalAcademyPortal.addEventListener('click',function (){
+        popupAcademyPortal.style.display = "none";
+        modalButtonAcademyPortal.style.display = "";
+        document.getElementById('page').style.filter = "none";
+    })
+    document.getElementById('page').style.filter = "blur(2px)";
+})
+
+modalButtonToDo.addEventListener('click', function (){
+    console.log("clicked")
+    popupToDo.style.display = "flex";
+    modalButtonToDo.style.display = "none";
+    closeModalToDo.addEventListener('click',function (){
+        popupToDo.style.display = "none";
+        modalButtonToDo.style.display = "";
+        document.getElementById('page').style.filter = "none";
+    })
+    document.getElementById('page').style.filter = "blur(2px)";
+})
+
+const emailIcon = document.getElementById("myEmail")
+emailIcon.addEventListener('click', function (){
+    navigator.clipboard.writeText("kim.dobney@yahoo.co.uk");
 })
