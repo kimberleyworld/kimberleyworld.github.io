@@ -5,22 +5,22 @@
 
 body {
 	margin: 0;
-	background-color: #EBF6FF;
+	background-color: gainsboro;
 	font-family: Verdana, sans-serif;
 }
 
 nav {
-	margin: 20px 20px 0;
+	margin: 20px 80px 0;
 	display: flex;
 	justify-content: space-between;
 	align-items: center; 
-	color: #FB88BC;
+	color: dimgrey;
 }
 .pages {
 	width: 150px;
 	display: flex;
 	justify-content: space-between;
-	/*text-decoration: none;*/
+
 	font-size: 20px;
 }
 a {
@@ -29,13 +29,14 @@ a {
 	cursor: pointer;
 	width: 50px;
 }
+
 a:hover {
   color: #FB88BC;
 }
 
 button:hover {
-	background-color: #FB88BC;
-	color: #EBF6FF;
+	background-color:  #FB88BC;
+	color: #ffffff;
 }
 
 #pcCartoon {
@@ -48,15 +49,95 @@ button:hover {
 
 header {
 	margin: 5% 10%;
-	/*padding: 50px;*/
 	text-align: center;
 	color: #9fa0ff;
 	font-size: 16pt;
-	background-image: url('Images/clouds.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
 }
+
+.coloursSwitchDiv {
+	margin: 0 10%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+
+}
+/* The switch - the box around the slider */
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+/* The slider */
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+input:checked + .slider {
+	background-color: #9fa0ff;
+}
+
+input:focus + .slider {
+	box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+}
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+}
+
+.tooltip .tooltiptext {
+	font-size: 15px;
+	visibility: hidden;
+	width: 200px;
+	color: dimgrey;
+	position: absolute;
+	z-index: 1;
+	top: 5px;
+	left: 90%;
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+}
+
 h1 {
 	margin-top: 60px;
 }
@@ -76,7 +157,7 @@ h2 {
 	margin-left: 10%;
 	margin-top: 50px;
 	margin-bottom: 0px;
-	color: #FB88BC;
+	color: #9fa0ff;
 	font-size: 30pt;
 }
 .date {
@@ -104,12 +185,15 @@ img {
 	flex-direction: column;
 	justify-content: flex-start;
 	margin-right: 20px;
-	color: #FB88BC;
+	color: dimgrey;
 	width: 150px;
 }
 .projectTitle {
 	cursor: pointer;
 	padding-bottom: 20px;
+	font-size: 20px;
+	font-weight: bold;
+	min-width: 30px;
 }
 .navTitle {
 	font-size: 20px;
@@ -117,17 +201,17 @@ img {
 .projectDescription {
 	max-width: 400px;
 	min-width: 150px;
-	margin: 0 20px;
+	margin: 0 40px;
 }
 
 .smallTitle {
-	color: #FB88BC;
-	font-weight: bolder;
+	color: dimgray;
 }
 .subtleTitle{
-	color: #FB88BC;
+	color: dimgrey;
 	font-weight: lighter;
 	font-size: small;
+	margin-bottom: 10px;
 }
 
 .textContent p {
@@ -139,11 +223,12 @@ img {
 	justify-content: space-between;
 }
 button {
-	border: 1px solid #9fa0ff;
-	border-radius: 5px;
+	border: none;
+	/*border-radius: 5px;*/
 	color: #3E3B3F ;
-	background-color: #EBF6FF;
+	background-color: white;
 	margin-top: 10px;
+	padding: 4px;
 }
 .foot {
     width: 100%;
@@ -168,10 +253,11 @@ button {
 #close {
 	display: none;
 }
-#modalPopup, #modalPopupPWWorld , #modalPopupPlanets, #modalPopupSnakeSweeper {
+#modalPopup, #modalPopupPWWorld , #modalPopupPlanets, #modalPopupSnakeSweeper,
+#modalPopupAcademyPortal,  #modalPopupToDo {
 	width: 80%;
 	height: 60%;
-	background-color: #ebf6ff;
+	background-color: gainsboro;
 	border: 1px solid #9fa0ff;
 	border-radius: 10px;
 	left: 0;
@@ -227,14 +313,14 @@ button {
 		flex-direction: column;
 	}
 	.projectDescription {
-		max-width: 100%;
 		margin: 0;
+		width: 100%;
 	}
 	img { 
 		order: -1;
 		margin: 0 auto;
-		max-width: 100%;
 		cursor: pointer;
+		max-width: 100%;
 	}
 	.textContent {
 		margin-top: 20px;
@@ -261,9 +347,11 @@ button {
 	}
 }
 
-@media screen and (max-width: 380px){
+@media screen and (max-width: 390px){
 	nav {
 		flex-direction: column;
+		margin-left: 40px;
+		text-align: center;
 	}
 	.pages {
 		display: flex;
@@ -292,7 +380,9 @@ button {
 	}
 }
 
+@media screen and (max-width: 600px){
 
+}
 
 @media screen and (min-width: 950px){
 	.about {
