@@ -6,7 +6,7 @@
 body {
 	margin: 0;
 	background-color: gainsboro;
-	font-family: Courier, sans-serif;
+	font-family: "Courier", "Courier New", monospace;
 }
 
 nav {
@@ -15,6 +15,7 @@ nav {
 	justify-content: space-between;
 	align-items: center; 
 	color: dimgrey;
+	font-weight: bold;
 }
 .pages {
 	width: 150px;
@@ -48,7 +49,7 @@ button:hover {
 }
 
 header {
-	margin: 5% 10%;
+	margin: 0% 10%;
 	text-align: center;
 	color: #9fa0ff;
 	font-size: 16pt;
@@ -392,7 +393,7 @@ button {
 		margin: 50px;
 	}
 	header {
-		margin: 10% 10%;
+		margin: 0% 10%;
 	}
 }
 
