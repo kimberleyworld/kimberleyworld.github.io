@@ -254,7 +254,7 @@ button {
 #close {
 	display: none;
 }
-#modalPopup, #modalPopupPWWorld , #modalPopupPlanets, #modalPopupSnakeSweeper,
+#modalPopup, #modalPopupPWWorld, #modalPopupSocial, #modalPopupSnakeSweeper,
 #modalPopupAcademyPortal,  #modalPopupToDo {
 	width: 80%;
 	height: 60%;

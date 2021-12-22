@@ -6,9 +6,13 @@ const modalButtonPWWorld = document.getElementById('modalButtonPWWorld')
 const popupPWWorld = document.getElementById('modalPopupPWWorld')
 const closeModalPWWorld = document.getElementById('closeModalPWWorld')
 
-const modalButtonPlanet = document.getElementById('modalButtonPlanet')
-const popupPlanets = document.getElementById('modalPopupPlanets')
-const closeModalPlanets = document.getElementById('closeModalPlanets')
+// const modalButtonPlanet = document.getElementById('modalButtonPlanet')
+// const popupPlanets = document.getElementById('modalPopupPlanets')
+// const closeModalPlanets = document.getElementById('closeModalPlanets')
+
+const modalButtonSocial = document.getElementById('modalButtonSocial')
+const popupSocial = document.getElementById('modalPopupSocial')
+const closeModalSocial = document.getElementById('closeModalSocial')
 
 const modalButtonSnakeSweeper = document.getElementById('modalButtonSnakeSweeper')
 const popupSnakeSweeper = document.getElementById('modalPopupSnakeSweeper')
@@ -45,13 +49,25 @@ modalButtonPWWorld.addEventListener('click', function (){
     document.getElementById('page').style.filter = "blur(2px)";
 })
 
-modalButtonPlanet.addEventListener('click', function (){
+// modalButtonPlanet.addEventListener('click', function (){
+//     console.log("clicked")
+//     popupPlanets.style.display = "flex";
+//     modalButtonPlanet.style.display = "none";
+//     closeModalPlanets.addEventListener('click',function (){
+//         popupPlanets.style.display = "none";
+//         modalButtonPlanet.style.display = "";
+//         document.getElementById('page').style.filter = "none";
+//     })
+//     document.getElementById('page').style.filter = "blur(2px)";
+// })
+
+modalButtonSocial.addEventListener('click', function (){
     console.log("clicked")
-    popupPlanets.style.display = "flex";
-    modalButtonPlanet.style.display = "none";
-    closeModalPlanets.addEventListener('click',function (){
-        popupPlanets.style.display = "none";
-        modalButtonPlanet.style.display = "";
+    popupSocial.style.display = "flex";
+    modalButtonSocial.style.display = "none";
+    closeModalSocial.addEventListener('click',function (){
+        popupSocial.style.display = "none";
+        modalButtonSocial.style.display = "";
         document.getElementById('page').style.filter = "none";
     })
     document.getElementById('page').style.filter = "blur(2px)";

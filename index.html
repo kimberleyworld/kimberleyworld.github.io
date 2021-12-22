@@ -33,13 +33,15 @@
 						<span class="tooltiptext">Click to copy email</span>
 					</a>
 			</header>
-			<div class="coloursSwitchDiv">
+
+			<!-- /////////put in at a later date ///////// -->
+			<!-- <div class="coloursSwitchDiv">
 				<p>Make site clearer</p>
 				<label class="switch">Hey
 					<input type="checkbox">
 					<span class="slider"></span>
 				</label>
-			</div>
+			</div> -->
 
 
 			<h2 id="about">About</h2>
@@ -111,7 +113,7 @@
 
 				<img src="./images/desktopPWWorld.png" alt="Paperweight world screenshot">
 			</article>
-<!--			//////////planetSite//////////-->
+			<!-- //////////planetSite//////////
 			<article>
 				<div class="textContent">
 					<div class="projectInfo">
@@ -133,6 +135,38 @@
 							An 8-page fact site for all the planets in the solar system using functional react.
 						</p>
 						<button id="modalButtonPlanet" type="button">Build Details</button>
+					</div>
+				</div>
+
+				<img src="./images/PlanetsDesktop.png" alt="Screenshot of the planets">
+			</article> -->
+
+			<!--			//////////social Media site //////////-->
+			<article>
+				<div class="textContent">
+					<div class="projectInfo">
+
+						<p class="projectTitle">BASSBOOK social media site</p>
+						<p>Front End</p>
+						<a href="https://github.com/iO-Academy/2021-react-social-FE" target="_blank">
+							<i class="fab fa-github icon"></i>
+						</a>
+						<p>Back End</p>
+						<a href="https://github.com/iO-Academy/2021-aug-social" target="_blank">
+							<i class="fab fa-github icon"></i>
+						</a>
+						<p class="date">12/21</p>
+					</div>
+
+					<div class="projectDescription">
+						<p class="smallTitle">Full-stack (team project)</p>
+						<p class="subtleTitle">Node.js, SequalPro, React, JS, Material UI, HTML</p>
+						<p>
+							A social media site that uses third-party authentication (JSON web 
+							tokens) to create private user accounts. We worked in a scrum team of
+							 eight, with a scrum master.
+						</p>
+						<button id="modalButtonSocial" type="button">Build Details</button>
 					</div>
 				</div>
 
@@ -307,7 +341,7 @@
 				</div>
 			</article>
 
-		<!--		///////PlanetsMdal////////-->
+				<!-- ///////PlanetsMdal////////
 		<article id="modalPopupPlanets">
 			<div class="modalDivs">
 				<div class="modelContent">
@@ -320,6 +354,29 @@
 						single planet component and passed in specific information to the instantiated
 						planets using props. I used routing to navigate between the 8 pages. This project is
 						still in progress.
+					</p>
+				</div>
+			</div>
+		</article> -->
+
+
+		<!--		///////social media site Modal////////-->
+		<article id="modalPopupSocial">
+			<div class="modalDivs">
+				<div class="modelContent">
+					<button id="closeModalSocial" type="button" class="btn btn-light">
+						<i class="closeIcon material-icons" >close</i>
+					</button>
+					<h3>Build</h3>
+					<p>We designed clear and simple wireframes, then used material UI components
+						to implement them in React. We created the backend API in node JS and the 
+						database in sequel pro. We decided to break the MERN stack as we needed a
+						 relational database. Each user profile dynamically displays the users own
+						  posts, bio and user name. We applied front end validation to the sign-up
+						   and login pages, as well as JSON web tokens to restrict access to
+							protected pages. This project is still in progress, in future we would 
+							like to add more functionality and refactor the front end into an atomic
+							 design. 
 					</p>
 				</div>
 			</div>
