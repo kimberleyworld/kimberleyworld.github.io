@@ -4,9 +4,11 @@
 }
 
 body {
-	margin: 0;
+	margin-left: 30px;
 	background-color: gainsboro;
 	font-family: "Courier", "Courier New", monospace;
+	width: auto;
+	margin: auto;
 }
 
 nav {
@@ -29,6 +31,7 @@ a {
 	color: #9fa0ff;
 	cursor: pointer;
 	width: 50px;
+	font-weight: bold;
 }
 
 a:hover {
@@ -65,7 +68,7 @@ header {
 	justify-content: flex-start;
 
 }
-/* The switch - the box around the slider */
+/* The switch - the box around the slider
 .switch {
 	position: relative;
 	display: inline-block;
@@ -73,14 +76,14 @@ header {
 	height: 34px;
 }
 
-/* Hide default HTML checkbox */
+Hide default HTML checkbox
 .switch input {
 	opacity: 0;
 	width: 0;
 	height: 0;
 }
 
-/* The slider */
+The slider
 .slider {
 	position: absolute;
 	cursor: pointer;
@@ -117,7 +120,7 @@ input:checked + .slider:before {
 	-webkit-transform: translateX(26px);
 	-ms-transform: translateX(26px);
 	transform: translateX(26px);
-}
+} */
 
 .tooltip {
 	position: relative;
@@ -182,9 +185,9 @@ img {
 	filter: grayscale(100%);
 }
 .projectInfo {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
+	/* display: flex; */
+	/* flex-direction: column; */
+	/* justify-content: flex-start; */
 	margin-right: 20px;
 	color: dimgrey;
 	width: 150px;
@@ -291,6 +294,11 @@ button {
 	position: fixed;
 }
 
+.modalText {
+	height: 60%;
+	overflow: auto;
+}
+
 .modalDivs img {
 	max-width: 50%;
 }
@@ -310,12 +318,19 @@ button {
 
 
 @media screen and (max-width: 740px){
+
+	nav {
+		flex-direction: column;
+		margin-left: 40px;
+		text-align: center;
+	}
 	article {
 		flex-direction: column;
 	}
 	.projectDescription {
 		margin: 0;
 		width: 100%;
+		max-width: 100%;
 	}
 	img { 
 		order: -1;
@@ -325,20 +340,15 @@ button {
 	}
 	.textContent {
 		margin-top: 20px;
+		display: block;
 	}
 
 	#modalPopup {
 		height: 80%;
 	}
 
-	.modelDivs {
-		flex-direction: column;
-		color: #9fa0ff;
-		margin: 10px;
-	}
-
 	.projectTitle {
-		width: 30px;
+		width: 400px;
 	}
 	#pcCartoon {
 		animation: none;
@@ -349,11 +359,7 @@ button {
 }
 
 @media screen and (max-width: 390px){
-	nav {
-		flex-direction: column;
-		margin-left: 40px;
-		text-align: center;
-	}
+	
 	.pages {
 		display: flex;
 		flex-direction: column;

@@ -48,9 +48,9 @@
 
 			<section class="about">
 				<p>
-					Nice to meet you, I'm kimberley and I've just finished a four-month intensive Bootcamp in
-					full-stack software development with the IO academy. I studied product design engineering in my
-					undergrad and in my few years in the start-up side of the industry I created multiple brands, UI's for
+					Nice to meet you, I'm Kimberley and I've just finished a four-month intensive Bootcamp in
+					full-stack software development with the <a href="https://io-academy.uk/courses/full-stack-track/">iO academy</a>. I studied product design engineering in my
+					undergrad and in my few years in the start-up side of the industry created multiple brands, UI's for
 					websites and XD mockups for apps. I decided to move over to software development to gain a new set of
 					tools for creativity. Websites, applications, visual effects, lighting displays, who knows where these
 					skills will take me but I'm enjoying the challenge and it's very exciting!
@@ -97,6 +97,9 @@
 						</a>
 						<a href="https://github.com/kimberleyworld/kimberley-collection" target="_blank">
 							<i class="fab fa-github icon"></i>
+						</a>
+						<a href="https://2021-kimberleyd.dev.io-academy.uk/collection/" target="_blank">
+							<i class="fas fa-link"></i>
 						</a>
 						<p class="date">09/21</p>
 					</div>
@@ -146,12 +149,14 @@
 				<div class="textContent">
 					<div class="projectInfo">
 
-						<p class="projectTitle">BASSBOOK social media site</p>
-						<p>Front End</p>
+						<a href="#" target="_blank">
+							<p class="projectTitle">Social Media Site</p>
+						</a>
+						<p>Front</p>
 						<a href="https://github.com/iO-Academy/2021-react-social-FE" target="_blank">
 							<i class="fab fa-github icon"></i>
 						</a>
-						<p>Back End</p>
+						<p>Back</p>
 						<a href="https://github.com/iO-Academy/2021-aug-social" target="_blank">
 							<i class="fab fa-github icon"></i>
 						</a>
@@ -170,7 +175,7 @@
 					</div>
 				</div>
 
-				<img src="./images/PlanetsDesktop.png" alt="Screenshot of the planets">
+				<img src="./images/bassbookHome.PNG" alt="Screenshot of bassbookHome">
 			</article>
 
 <!--			//////////SnakeSweeper//////////-->
@@ -300,6 +305,10 @@
 					<a href="https://www.linkedin.com/in/kimberley-dobney-0b4a5815b/" target="_blank">
 						<i class="fab fa-linkedin icon"></i>
 					</a>
+					<a href="https://github.com/kimberleyworld" target="_blank">
+						<i class="fab fa-github icon"></i>
+					</a>
+					
 				</div>
 			</div>
 		</div>
@@ -312,12 +321,14 @@
 							<i class="closeIcon material-icons" >close</i>
 						</button>
 						<h3>Build</h3>
-						<p>We created this app in OOP applying SOLID principles where possible. I worked on designing,
-							creating and implementing the wireframes. As well as the hydrator/entity classes to
-							receive and display data from a SQL database. The project utilised autoloading and
-							namespacing throughout, validated and sanitised all user inputs before database insertion
-							and unit tested our methods with PHPUnit.
-						</p>
+						<div class="modalText">
+							<p>We created this app in OOP applying SOLID principles where possible. I worked on designing,
+								creating and implementing the wireframes. As well as the hydrator/entity classes to
+								receive and display data from a SQL database. The project utilised autoloading and
+								namespacing throughout, validated and sanitised all user inputs before database insertion
+								and unit tested our methods with PHPUnit.
+							</p>
+					</div>
 					</div>
 				</div>
 			</article>
@@ -331,12 +342,14 @@
 							<i class="closeIcon material-icons" >close</i>
 						</button>
 						<h3>Build</h3>
-						<p>I designed a set of wireframes and made them responsive using media queries at
-							various common breakpoints. The paperweights are stored in a Sequel Pro Database
-							and accessed through multiple fetch requests. Users input new items using a form
-							so all inputs are sanitised before entering the database. All functions created in
-							the project were successfully unit tested.
-						</p>
+						<div class="modalText">
+							<p>I designed a set of wireframes and made them responsive using media queries at
+								various common breakpoints. The paperweights are stored in a Sequel Pro Database
+								and accessed through multiple fetch requests. Users input new items using a form
+								so all inputs are sanitised before entering the database. All functions created in
+								the project were successfully unit tested.
+							</p>
+						</div>
 					</div>
 				</div>
 			</article>
@@ -363,21 +376,24 @@
 		<!--		///////social media site Modal////////-->
 		<article id="modalPopupSocial">
 			<div class="modalDivs">
+				<img src="./images/bassbookLogin.PNG" alt="Screenshot of Bassbook login page">
 				<div class="modelContent">
 					<button id="closeModalSocial" type="button" class="btn btn-light">
 						<i class="closeIcon material-icons" >close</i>
 					</button>
 					<h3>Build</h3>
-					<p>We designed clear and simple wireframes, then used material UI components
-						to implement them in React. We created the backend API in node JS and the 
-						database in sequel pro. We decided to break the MERN stack as we needed a
-						 relational database. Each user profile dynamically displays the users own
-						  posts, bio and user name. We applied front end validation to the sign-up
-						   and login pages, as well as JSON web tokens to restrict access to
-							protected pages. This project is still in progress, in future we would 
-							like to add more functionality and refactor the front end into an atomic
-							 design. 
-					</p>
+					<div class="modalText">
+						<p>We designed clear and simple wireframes, then used material UI components
+							to implement them in React. We created the backend API in node JS and the 
+							database in sequel pro. We decided to break the MERN stack as we needed a
+							relational database. Each user profile dynamically displays the users own
+							posts, bio and user name. We applied front end validation to the sign-up
+							and login pages, as well as JSON web tokens to restrict access to
+								protected pages. This project is still in progress, in future we would 
+								like to add more functionality and refactor the front end into an atomic
+								design. 
+						</p>
+					</div>
 				</div>
 			</div>
 		</article>
@@ -391,12 +407,14 @@
 						<i class="closeIcon material-icons" >close</i>
 					</button>
 					<h3>Build</h3>
-					<p>We manipulated the DOM using event listeners and conditionals to create the
-						interactive elements of the game. I focused on generating the randomised squares
-						when a new game is started and the functionality that triggers a Modal to appear if
-						the game is won/lost. A static band across the top of the screen records and displays the number
-						of lives used and the number of lives left.
-					</p>
+					<div class="modalText">
+						<p>We manipulated the DOM using event listeners and conditionals to create the
+							interactive elements of the game. I focused on generating the randomised squares
+							when a new game is started and the functionality that triggers a Modal to appear if
+							the game is won/lost. A static band across the top of the screen records and displays the number
+							of lives used and the number of lives left.
+						</p>
+					</div>
 				</div>
 			</div>
 		</article>
@@ -410,13 +428,15 @@
 						<i class="closeIcon material-icons" >close</i>
 					</button>
 					<h3>Build</h3>
-					<p> This is a legacy code base, built using Javascript and PHP in a slim framework.
-						We pair programmed to fix a bug that caused applicants to have student status even
-						if they weren't yet one. This was fixed by adjusting the conditional to a strict
-						equals operator. We then improved the UX of the 'next stage' modal to show the stage
-						the applicant was currently on and the stage they were moving to. To do this we
-						created a wireframe and worked with the existing colour pallet.
-					</p>
+					<div class="modalText">
+						<p> This is a legacy code base, built using Javascript and PHP in a slim framework.
+							We pair programmed to fix a bug that caused applicants to have student status even
+							if they weren't yet one. This was fixed by adjusting the conditional to a strict
+							equals operator. We then improved the UX of the 'next stage' modal to show the stage
+							the applicant was currently on and the stage they were moving to. To do this we
+							created a wireframe and worked with the existing colour pallet.
+						</p>
+					</div>
 				</div>
 			</div>
 		</article>
@@ -430,6 +450,7 @@
 						<i class="closeIcon material-icons" >close</i>
 					</button>
 					<h3>Build</h3>
+					<div class="modalText">
 					<p> I started by creating the API using Node.js with the Express.js framework. Then
 						I created a collection of to-dos in MongoDB and accesses them using HTTP  verbs. I
 						checked the POST, DELETE and PUT requests using postman and Handlebars Templating
@@ -437,11 +458,10 @@
 
 						To give access to the API on the front end I installed CORS, then I built the front
 						end using Material UI components. Manipulating the DOM to make the app interactive.
-
 					</p>
+					</div>
 				</div>
 			</div>
 		</article>
-
 	</body>
 </html>
