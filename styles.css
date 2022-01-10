@@ -197,6 +197,9 @@ img {
 	max-width: 45%;
 	height: auto;
 }
+downloadIcon {
+	font-size: 20px;
+}
 .blackAndWhite {
 	filter: grayscale(100%);
 }
