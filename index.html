@@ -1,447 +1,382 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Kimberley Dobney Portfolio</title>
-		<link type="text/css" rel="stylesheet" href="normalize.css">
-		<link type="text/css" rel="stylesheet" href="styles.css">
-		<script defer src="index.js"></script>
-		<meta name="viewport" content="width=device-width,
+
+<head>
+	<title>Kimberley Dobney Portfolio</title>
+	<link type="text/css" rel="stylesheet" href="normalize.css">
+	<link type="text/css" rel="stylesheet" href="styles.css">
+	<script defer src="index.js"></script>
+	<meta name="viewport" content="width=device-width,
 		 initial-scale=1.0">
-		<script src="https://kit.fontawesome.com/735591ef64.js" crossorigin="anonymous"></script>
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-			  rel="stylesheet">
-	</head>
-	<body>
-		<nav>
-			<h4 class="navTitle">Kimberley Dobney Portfolio</h4>
+	<script src="https://kit.fontawesome.com/735591ef64.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
 
-			<div class="pages">
-				<a href="#about">About</a>
-				<a href="#projects">Projects</a>
-				<a href="./cv/KimberleyCV.pdf" target="_blank">CV</a>
-			</div>
-		</nav>   
+<body>
+	<nav>
+		<h4 class="navTitle">Kimberley Dobney Portfolio</h4>
 
-		<div id="page">
-		
-			<header>
-				<img class="blackAndWhite spiningSvg" src="./images/flowerTransparent.png" alt="spinning computer animation" id="pcCartoon">
-				<h1>Creative Software Developer</h1>
+		<div class="pages">
+			<a href="#about">About</a>
+			<a href="#projects">Projects</a>
+			<a href="./cv/CV.pdf" target="_blank">CV</a>
+		</div>
+	</nav>
 
-					<a id="myEmail" class="tooltip">
-						<i class="fas fa-envelope"></i>
-						<span class="tooltiptext">Click to copy email</span>
-					</a>
-					<p class="hardCodedEmail">kim.dobney@yahoo.co.uk</p>
-			</header>
+	<div id="page">
 
-			<!-- /////////put in at a later date ///////// -->
-			<!-- <div class="coloursSwitchDiv">
-				<p>Make site clearer</p>
-				<label class="switch">Hey
-					<input type="checkbox">
-					<span class="slider"></span>
-				</label>
-			</div> -->
+		<header>
+			<img class="blackAndWhite spiningSvg" src="./images/flowerTransparent.png" alt="spinning computer animation"
+				id="pcCartoon">
+			<h1>Creative Software Developer</h1>
+
+			<a id="myEmail" class="tooltip">
+				<i class="fas fa-envelope"></i>
+				<span class="tooltiptext">Click to copy email</span>
+			</a>
+			<p class="hardCodedEmail">kim.dobney@yahoo.co.uk</p>
+		</header>
 
 
-			<h2 id="about" class="siteTitles">About</h2>
+		<h2 id="about" class="siteTitles">About</h2>
 
-			<section class="about">
-				<p>
-					Nice to meet you, I'm Kimberley and I've just finished a four-month intensive Bootcamp in
-					full-stack software development with the <a href="https://io-academy.uk/courses/full-stack-track/">iO academy</a>. I studied product design engineering in my
-					undergrad and in my few years in the start-up side of the industry created multiple brands, UI's for
-					websites and XD mockups for apps. I decided to move over to software development to gain a new set of
-					tools for creativity. Websites, applications, visual effects, lighting displays, who knows where these
-					skills will take me but I'm enjoying the challenge and it's very exciting!
-				</p>
-			</section>
+		<section class="about">
+			<p>
+				Nice to meet you, I'm Kimberley, I’m an avid <a href="https://www.instagram.com/krimblecrochet/?hl=en"
+					target="_blank">crocheter</a> and coder. I've spent the last two years working
+				at Dyson as a UX engineer and in my spare time have created embedded installations for music event. I
+				lean towards front end development and digital communication but my experience with back end and
+				embedded engineering gives me great context of how all the parts work together. I’m constantly learning
+				new languages and frame works and seeing how they can bend to create something cute and fun. In my
+				current practice I’m learning how to play with AR and P5.js which is exciting, can’t wait to share those
+				projects soon. I will be instructing for Code First Girls in May, please reach out for more info on my
+				work in education.
+			</p>
+		</section>
 
-			<h2 id="projects" class="siteTitles">Software Development Projects</h2>
-<!--////////// Muppets Project //////// -->
-			<article>
-				<div class="textContent">
-					<div class="projectInfo">
-							<p class="projectTitle">Muppet OOP listing app</p>
-						<a href="https://github.com/iO-Academy/2021-aug-oopMuppets" target="_blank">
-							<i class="fab fa-github icon"></i>
-						</a>
-						<a href="https://dev.io-academy.uk/projects/2021-aug/OOPMuppets/index.php" target="_blank">
-							<i class="fas fa-link"></i>
-						</a>
-					</div>
-
-					<div class="projectDescription">
-						<p class="smallTitle">SCRUM project - team of 8</p>
-						<p class="subtleTitle">PHP, OOP, SQL, HTML and CSS</p>
-						<p>
-							Displays all muppets in a UI built in line with a created wireframe. Allows users to click on
-							individual muppets to reveal more information, search for specific muppets by name (including
-							partial text searches) and bring up more information about a random muppet.
-						</p>
-						<button id="modalButtonMuppets" type="button">Build Details</button>
-					</div>
-				</div>
-
-					<img src="./images/muppets.png" alt="Image of all the muppets">
-			</article>
-<!--////Paperweight world//////-->
-			<article>
-				<div class="textContent">
-					<div class="projectInfo">
-							<p class="projectTitle">Paper-Weight World</p>
-						<a href="https://github.com/kimberleyworld/kimberley-collection" target="_blank">
-							<i class="fab fa-github icon"></i>
-						</a>
-						<a href="https://2021-kimberleyd.dev.io-academy.uk/collection/" target="_blank">
-							<i class="fas fa-link"></i>
-						</a>
-					</div>
-
-					<div class="projectDescription">
-						<p class="smallTitle">Collection App (Individual Project) </p>
-						<p class="subtleTitle">PHP, SQL, HTML, CSS </p>
-						<p>
-							A responsive app to view, and contribute through a HTML form, to a collection of paperweights.
-						</p>
-						<button id="modalButtonPWWorld" type="button">Build Details</button>
-					</div>
-				</div>
-
-				<img src="./images/desktopPWWorld.png" alt="Paperweight world screenshot">
-			</article>
-			<!-- //////////planetSite//////////
-			<article>
-				<div class="textContent">
-					<div class="projectInfo">
-
-						<p class="projectTitle">Planet Fact Site</p>
-						<a href="" target="_blank">
-							<i class="fab fa-github icon"></i>
-						</a>
-						<a href="" target="_blank">
-							<i class="fas fa-link"></i>
-						</a>
-					</div>
-
-					<div class="projectDescription">
-						<p class="smallTitle">React API App (Individual Project) </p>
-						<p class="subtleTitle">JavaScript, React, CSS, HTML</p>
-						<p>
-							An 8-page fact site for all the planets in the solar system using functional react.
-						</p>
-						<button id="modalButtonPlanet" type="button">Build Details</button>
-					</div>
-				</div>
-
-				<img src="./images/PlanetsDesktop.png" alt="Screenshot of the planets">
-			</article> -->
-
-			<!--			//////////social Media site //////////-->
-			<article>
-				<div class="textContent">
-					<div class="projectInfo">
-							<p class="projectTitle">Social Media Site</p>
-						<p>Front</p>
-						<a href="https://github.com/iO-Academy/2021-react-social-FE" target="_blank">
-							<i class="fab fa-github icon"></i>
-						</a>
-						<p>Back</p>
-						<a href="https://github.com/iO-Academy/2021-aug-social" target="_blank">
-							<i class="fab fa-github icon"></i>
-						</a>
-					</div>
-
-					<div class="projectDescription">
-						<p class="smallTitle">Full-stack (team project)</p>
-						<p class="subtleTitle">Node.js, SequalPro, React, JS, Material UI, HTML</p>
-						<p>
-							A social media site that uses third-party authentication (JSON web 
-							tokens) to create private user accounts. We worked in a scrum team of
-							 eight, with a scrum master.
-						</p>
-						<button id="modalButtonSocial" type="button">Build Details</button>
-					</div>
-				</div>
-
-				<img src="./images/bassbookHome.PNG" alt="Screenshot of bassbookHome">
-			</article>
-
-<!--			//////////SnakeSweeper//////////-->
-
-			<article>
-				<div class="textContent">
-					<div class="projectInfo">
-							<p class="projectTitle">Snake Sweeper</p>
-						<a href="https://github.com/iO-Academy/2021-aug-minesweeper" target="_blank">
-							<i class="fab fa-github icon"></i>
-						</a>
-						<a href="https://dev.io-academy.uk/projects/2021-aug/2021-aug-snakeSweeper/" target="_blank">
-							<i class="fas fa-link"></i>
-						</a>
-					</div>
-
-					<div class="projectDescription">
-						<p class="smallTitle">JavaScript Game (SCRUM project - team of 8)</p>
-						<p class="subtleTitle">JavaScript, HTML, CSS</p>
-						<p>
-							A game where users must find all the lynx in the forest before they run
-							out of lives or get bitten by too many snakes. The size of the forest and the
-							amount of lynx is defined by the user and is randomly generated at the start of
-							each game. We also added functionality to keep track of the current score and
-							remaining lives.
-
-						</p>
-						<button id="modalButtonSnakeSweeper" type="button">Build Details</button>
-					</div>
-				</div>
-
-				<img src="./images/sweeperLoosingScreen.png" alt="Screenshot of the snake sweeper">
-			</article>
-
-			<!--			//////////Acadaemy Portal//////////-->
-
-			<article>
-				<div class="textContent">
-					<div class="projectInfo">
-							<p class="projectTitle">Acadamy Portal Legacy Code</p>
-						<a href="https://github.com/iO-Academy/AcademyPortal" target="_blank">
-							<i class="fab fa-github icon"></i>
-						</a>
-						<a href="https://portal.dev.io-academy.uk/" target="_blank">
-							<i class="fas fa-link"></i>
-						</a>
-					</div>
-
-					<div class="projectDescription">
-						<p class="smallTitle">Online Aptitude Test Build (SCRUM project - team of 8) </p>
-						<p class="subtleTitle">JavaScript, React, Bootstrap, CSS, HTML</p>
-						<p>
-							An app that replicates a prospective student applying to the IO academy.
-							This is a legacy project with a list of bugs that need to be fixed.
-
-						</p>
-						<button id="modalButtonAcademyPortal" type="button">Build Details</button>
-					</div>
-				</div>
-
-				<img src="./images/AccadamyPortal.png" alt="Screenshot of the accadamy portal">
-			</article>
-
-			<!--			//////////Listed//////////-->
-
-			<article>
-				<div class="textContent">
-					<div class="projectInfo">
-							<p class="projectTitle">Listed ToDo app</p>
-						<a href="https://github.com/iO-Academy/2021-aug-minesweeper" target="_blank">
-							<i class="fab fa-github icon"></i>
-						</a>
-					</div>
-
-					<div class="projectDescription">
-						<p class="smallTitle">Full Stack, Individual project </p>
-						<p class="subtleTitle">NodeJS, MongoDB, JavaScript, Bootstrap, CSS, HTML</p>
-						<p>
-							Listed is a front end application and backend API that allows users
-							to write, add and delete items to a to-do list.
-
-						</p>
-						<button id="modalButtonToDo" type="button">Build Details</button>
-					</div>
-				</div>
-
-				<img src="./images/listed.png" alt="Screenshot of todo app">
-			</article>
-
-<!--			<h2 id="projects" class="siteTitles">Design Projects</h2>-->
-
-<!--			<article>-->
-<!--				<div class="textContent">-->
-<!--					<div class="projectInfo">-->
-<!--						<a href="#">-->
-<!--							<p class="projectTitle">project 1</p>-->
-<!--						</a>-->
-<!--						<p>08/09/21</p>-->
-<!--						<a href="https://github.com/kimberleyworld/ThePlanets">-->
-<!--							<i class="fab fa-github icon">    github</i>-->
-<!--						</a>-->
-<!--					</div>-->
-
-<!--					<div class="projectDescription">-->
-<!--						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>-->
-<!--					</div>-->
-<!--				</div>-->
-
-<!--				<img src="PlanetsDesktop.png" alt="Screenshot of the planets">-->
-<!--			</article>-->
+		<h2 id="projects" class="siteTitles">Software Development Projects</h2>
 
 
-			<div class="foot">
-				<div class="footInfo">
-					<h2>Contact Details</h2>
-					<p class="email">kim.dobney@yahoo.co.uk</p>
-					<a href="https://www.linkedin.com/in/kimberley-dobney-0b4a5815b/" target="_blank">
-						<i class="fab fa-linkedin icon"></i>
-					</a>
-					<a href="https://github.com/kimberleyworld" target="_blank">
+		<!--////////// Muppets Project //////// -->
+		<article>
+			<div class="textContent">
+				<div class="projectInfo">
+					<p class="projectTitle">Muppet OOP listing app</p>
+					<a href="https://github.com/iO-Academy/2021-aug-oopMuppets" target="_blank">
 						<i class="fab fa-github icon"></i>
 					</a>
-					
+					<a href="https://dev.io-academy.uk/projects/2021-aug/OOPMuppets/index.php" target="_blank">
+						<i class="fas fa-link"></i>
+					</a>
+				</div>
+
+				<div class="projectDescription">
+					<p class="smallTitle">SCRUM project - team of 8</p>
+					<p class="subtleTitle">PHP, OOP, SQL, HTML and CSS</p>
+					<p>
+						Displays all muppets in a UI built in line with a created wireframe. Allows users to click on
+						individual muppets to reveal more information, search for specific muppets by name (including
+						partial text searches) and bring up more information about a random muppet.
+					</p>
+					<button id="modalButtonMuppets" type="button">Build Details</button>
 				</div>
 			</div>
+
+			<img src="./images/muppets.png" alt="Image of all the muppets">
+		</article>
+		<!--////Paperweight world//////-->
+		<article>
+			<div class="textContent">
+				<div class="projectInfo">
+					<p class="projectTitle">Paper-Weight World</p>
+					<a href="https://github.com/kimberleyworld/kimberley-collection" target="_blank">
+						<i class="fab fa-github icon"></i>
+					</a>
+					<a href="https://2021-kimberleyd.dev.io-academy.uk/collection/" target="_blank">
+						<i class="fas fa-link"></i>
+					</a>
+				</div>
+
+				<div class="projectDescription">
+					<p class="smallTitle">Collection App (Individual Project) </p>
+					<p class="subtleTitle">PHP, SQL, HTML, CSS </p>
+					<p>
+						A responsive app to view, and contribute through a HTML form, to a collection of paperweights.
+					</p>
+					<button id="modalButtonPWWorld" type="button">Build Details</button>
+				</div>
+			</div>
+
+			<img src="./images/desktopPWWorld.png" alt="Paperweight world screenshot">
+		</article>
+
+		<!--			//////////social Media site //////////-->
+		<article>
+			<div class="textContent">
+				<div class="projectInfo">
+					<p class="projectTitle">Social Media Site</p>
+					<p>Front</p>
+					<a href="https://github.com/iO-Academy/2021-react-social-FE" target="_blank">
+						<i class="fab fa-github icon"></i>
+					</a>
+					<p>Back</p>
+					<a href="https://github.com/iO-Academy/2021-aug-social" target="_blank">
+						<i class="fab fa-github icon"></i>
+					</a>
+				</div>
+
+				<div class="projectDescription">
+					<p class="smallTitle">Full-stack (team project)</p>
+					<p class="subtleTitle">Node.js, SequalPro, React, JS, Material UI, HTML</p>
+					<p>
+						A social media site that uses third-party authentication (JSON web
+						tokens) to create private user accounts. We worked in a scrum team of
+						eight, with a scrum master.
+					</p>
+					<button id="modalButtonSocial" type="button">Build Details</button>
+				</div>
+			</div>
+
+			<img src="./images/bassbookHome.PNG" alt="Screenshot of bassbookHome">
+		</article>
+
+		<!--			//////////SnakeSweeper//////////-->
+
+		<article>
+			<div class="textContent">
+				<div class="projectInfo">
+					<p class="projectTitle">Snake Sweeper</p>
+					<a href="https://github.com/iO-Academy/2021-aug-minesweeper" target="_blank">
+						<i class="fab fa-github icon"></i>
+					</a>
+					<a href="https://dev.io-academy.uk/projects/2021-aug/2021-aug-snakeSweeper/" target="_blank">
+						<i class="fas fa-link"></i>
+					</a>
+				</div>
+
+				<div class="projectDescription">
+					<p class="smallTitle">JavaScript Game (SCRUM project - team of 8)</p>
+					<p class="subtleTitle">JavaScript, HTML, CSS</p>
+					<p>
+						A game where users must find all the lynx in the forest before they run
+						out of lives or get bitten by too many snakes. The size of the forest and the
+						amount of lynx is defined by the user and is randomly generated at the start of
+						each game. We also added functionality to keep track of the current score and
+						remaining lives.
+
+					</p>
+					<button id="modalButtonSnakeSweeper" type="button">Build Details</button>
+				</div>
+			</div>
+
+			<img src="./images/sweeperLoosingScreen.png" alt="Screenshot of the snake sweeper">
+		</article>
+
+		<!--			//////////Acadaemy Portal//////////-->
+
+		<article>
+			<div class="textContent">
+				<div class="projectInfo">
+					<p class="projectTitle">Acadamy Portal Legacy Code</p>
+					<a href="https://github.com/iO-Academy/AcademyPortal" target="_blank">
+						<i class="fab fa-github icon"></i>
+					</a>
+					<a href="https://portal.dev.io-academy.uk/" target="_blank">
+						<i class="fas fa-link"></i>
+					</a>
+				</div>
+
+				<div class="projectDescription">
+					<p class="smallTitle">Online Aptitude Test Build (SCRUM project - team of 8) </p>
+					<p class="subtleTitle">JavaScript, React, Bootstrap, CSS, HTML</p>
+					<p>
+						An app that replicates a prospective student applying to the IO academy.
+						This is a legacy project with a list of bugs that need to be fixed.
+
+					</p>
+					<button id="modalButtonAcademyPortal" type="button">Build Details</button>
+				</div>
+			</div>
+
+			<img src="./images/AccadamyPortal.png" alt="Screenshot of the accadamy portal">
+		</article>
+
+		<!--			//////////Listed//////////-->
+
+		<article>
+			<div class="textContent">
+				<div class="projectInfo">
+					<p class="projectTitle">Listed ToDo app</p>
+					<a href="https://github.com/iO-Academy/2021-aug-minesweeper" target="_blank">
+						<i class="fab fa-github icon"></i>
+					</a>
+				</div>
+
+				<div class="projectDescription">
+					<p class="smallTitle">Full Stack, Individual project </p>
+					<p class="subtleTitle">NodeJS, MongoDB, JavaScript, Bootstrap, CSS, HTML</p>
+					<p>
+						Listed is a front end application and backend API that allows users
+						to write, add and delete items to a to-do list.
+
+					</p>
+					<button id="modalButtonToDo" type="button">Build Details</button>
+				</div>
+			</div>
+
+			<img src="./images/listed.png" alt="Screenshot of todo app">
+		</article>
+
+
+
+		<div class="foot">
+			<div class="footInfo">
+				<h2>Contact Details</h2>
+				<p class="email">kim.dobney@yahoo.co.uk</p>
+				<a href="https://www.linkedin.com/in/kimberley-dobney-0b4a5815b/" target="_blank">
+					<i class="fab fa-linkedin icon"></i>
+				</a>
+				<a href="https://github.com/kimberleyworld" target="_blank">
+					<i class="fab fa-github icon"></i>
+				</a>
+
+			</div>
 		</div>
-<!--		///////muppetModal////////-->
-			<article id="modalPopup">
-				<div class="modalDivs">
-					<img src="images/muppetWireframe.png" alt="wireframe for muppet site">
-					<div class="modelContent">
-						<button id="closeModal" type="button" class="btn btn-light">
-							<i class="closeIcon material-icons" >close</i>
-						</button>
-						<h3>Build</h3>
-						<div class="modalText">
-							<p>We created this app in OOP applying SOLID principles where possible. I worked on designing,
-								creating and implementing the wireframes. As well as the hydrator/entity classes to
-								receive and display data from a SQL database. The project utilised autoloading and
-								namespacing throughout, validated and sanitised all user inputs before database insertion
-								and unit tested our methods with PHPUnit.
-							</p>
-					</div>
-					</div>
-				</div>
-			</article>
-
-		<!--		///////PWWorldModal////////-->
-			<article id="modalPopupPWWorld">
-				<div class="modalDivs">
-					<img src="./images/MobilePWWorld.png" alt="wireframe for paperweight world">
-					<div class="modelContent">
-						<button id="closeModalPWWorld" type="button" class="btn btn-light">
-							<i class="closeIcon material-icons" >close</i>
-						</button>
-						<h3>Build</h3>
-						<div class="modalText">
-							<p>I designed a set of wireframes and made them responsive using media queries at
-								various common breakpoints. The paperweights are stored in a Sequel Pro Database
-								and accessed through multiple fetch requests. Users input new items using a form
-								so all inputs are sanitised before entering the database. All functions created in
-								the project were successfully unit tested.
-							</p>
-						</div>
-					</div>
-				</div>
-			</article>
-
-				<!-- ///////PlanetsMdal////////
-		<article id="modalPopupPlanets">
-			<div class="modalDivs">
-				<div class="modelContent">
-					<button id="closeModalPlanets" type="button" class="btn btn-light">
-						<i class="closeIcon material-icons" >close</i>
-					</button>
-					<h3>Build</h3>
-					<p>I replicated a detailed wireframe to produce the site. I displayed information about
-						the planets by fetching data from an API and storing it in the state. I created a
-						single planet component and passed in specific information to the instantiated
-						planets using props. I used routing to navigate between the 8 pages. This project is
-						still in progress.
+	</div>
+	<!--		///////muppetModal////////-->
+	<article id="modalPopup">
+		<div class="modalDivs">
+			<img src="images/muppetWireframe.png" alt="wireframe for muppet site">
+			<div class="modelContent">
+				<button id="closeModal" type="button" class="btn btn-light">
+					<i class="closeIcon material-icons">close</i>
+				</button>
+				<h3>Build</h3>
+				<div class="modalText">
+					<p>We created this app in OOP applying SOLID principles where possible. I worked on designing,
+						creating and implementing the wireframes. As well as the hydrator/entity classes to
+						receive and display data from a SQL database. The project utilised autoloading and
+						namespacing throughout, validated and sanitised all user inputs before database insertion
+						and unit tested our methods with PHPUnit.
 					</p>
 				</div>
 			</div>
-		</article> -->
+		</div>
+	</article>
 
-
-		<!--		///////social media site Modal////////-->
-		<article id="modalPopupSocial">
-			<div class="modalDivs">
-				<img src="./images/bassbookLogin.PNG" alt="Screenshot of Bassbook login page">
-				<div class="modelContent">
-					<button id="closeModalSocial" type="button" class="btn btn-light">
-						<i class="closeIcon material-icons" >close</i>
-					</button>
-					<h3>Build</h3>
-					<div class="modalText">
-						<p>We designed clear and simple wireframes, then used material UI components
-							to implement them in React. We created the backend API in node JS and the 
-							database in sequel pro. We decided to break the MERN stack as we needed a
-							relational database. Each user profile dynamically displays the users own
-							posts, bio and user name. We applied front end validation to the sign-up
-							and login pages, as well as JSON web tokens to restrict access to
-								protected pages. This project is still in progress, in future we would 
-								like to add more functionality and refactor the front end into an atomic
-								design. 
-						</p>
-					</div>
+	<!--		///////PWWorldModal////////-->
+	<article id="modalPopupPWWorld">
+		<div class="modalDivs">
+			<img src="./images/MobilePWWorld.png" alt="wireframe for paperweight world">
+			<div class="modelContent">
+				<button id="closeModalPWWorld" type="button" class="btn btn-light">
+					<i class="closeIcon material-icons">close</i>
+				</button>
+				<h3>Build</h3>
+				<div class="modalText">
+					<p>I designed a set of wireframes and made them responsive using media queries at
+						various common breakpoints. The paperweights are stored in a Sequel Pro Database
+						and accessed through multiple fetch requests. Users input new items using a form
+						so all inputs are sanitised before entering the database. All functions created in
+						the project were successfully unit tested.
+					</p>
 				</div>
 			</div>
-		</article>
+		</div>
+	</article>
 
-		<!--		///////SnakeSweeperModal////////-->
-		<article id="modalPopupSnakeSweeper">
-			<div class="modalDivs">
-				<img src="./images/snakeSweeperTablet.png" alt="Screenshot of SnakeSweeper Tablet view">
-				<div class="modelContent">
-					<button id="closeModalSnakeSweeper" type="button" class="btn btn-light">
-						<i class="closeIcon material-icons" >close</i>
-					</button>
-					<h3>Build</h3>
-					<div class="modalText">
-						<p>We manipulated the DOM using event listeners and conditionals to create the
-							interactive elements of the game. I focused on generating the randomised squares
-							when a new game is started and the functionality that triggers a Modal to appear if
-							the game is won/lost. A static band across the top of the screen records and displays the number
-							of lives used and the number of lives left.
-						</p>
-					</div>
+
+
+	<!--		///////social media site Modal////////-->
+	<article id="modalPopupSocial">
+		<div class="modalDivs">
+			<img src="./images/bassbookLogin.PNG" alt="Screenshot of Bassbook login page">
+			<div class="modelContent">
+				<button id="closeModalSocial" type="button" class="btn btn-light">
+					<i class="closeIcon material-icons">close</i>
+				</button>
+				<h3>Build</h3>
+				<div class="modalText">
+					<p>We designed clear and simple wireframes, then used material UI components
+						to implement them in React. We created the backend API in node JS and the
+						database in sequel pro. We decided to break the MERN stack as we needed a
+						relational database. Each user profile dynamically displays the users own
+						posts, bio and user name. We applied front end validation to the sign-up
+						and login pages, as well as JSON web tokens to restrict access to
+						protected pages. This project is still in progress, in future we would
+						like to add more functionality and refactor the front end into an atomic
+						design.
+					</p>
 				</div>
 			</div>
-		</article>
+		</div>
+	</article>
 
-		<!--		///////AcademPortalModal////////-->
-		<article id="modalPopupAcademyPortal">
-			<div class="modalDivs">
-				<img src="./images/NextStageModal.png" alt="Screenshot of next stage modal in accadamy portal">
-				<div class="modelContent">
-					<button id="closeModalAcademyPortal" type="button" class="btn btn-light">
-						<i class="closeIcon material-icons" >close</i>
-					</button>
-					<h3>Build</h3>
-					<div class="modalText">
-						<p> This is a legacy code base, built using Javascript and PHP in a slim framework.
-							We pair programmed to fix a bug that caused applicants to have student status even
-							if they weren't yet one. This was fixed by adjusting the conditional to a strict
-							equals operator. We then improved the UX of the 'next stage' modal to show the stage
-							the applicant was currently on and the stage they were moving to. To do this we
-							created a wireframe and worked with the existing colour pallet.
-						</p>
-					</div>
+	<!--		///////SnakeSweeperModal////////-->
+	<article id="modalPopupSnakeSweeper">
+		<div class="modalDivs">
+			<img src="./images/snakeSweeperTablet.png" alt="Screenshot of SnakeSweeper Tablet view">
+			<div class="modelContent">
+				<button id="closeModalSnakeSweeper" type="button" class="btn btn-light">
+					<i class="closeIcon material-icons">close</i>
+				</button>
+				<h3>Build</h3>
+				<div class="modalText">
+					<p>We manipulated the DOM using event listeners and conditionals to create the
+						interactive elements of the game. I focused on generating the randomised squares
+						when a new game is started and the functionality that triggers a Modal to appear if
+						the game is won/lost. A static band across the top of the screen records and displays the number
+						of lives used and the number of lives left.
+					</p>
 				</div>
 			</div>
-		</article>
+		</div>
+	</article>
 
-		<!--		///////ToDoModal////////-->
-		<article id="modalPopupToDo">
-			<div class="modalDivs">
-				<img src="./images/listed.png" alt="Screenshot of todo app">
-				<div class="modelContent">
-					<button id="closeModalToDo" type="button" class="btn btn-light">
-						<i class="closeIcon material-icons" >close</i>
-					</button>
-					<h3>Build</h3>
-					<div class="modalText">
+	<!--		///////AcademPortalModal////////-->
+	<article id="modalPopupAcademyPortal">
+		<div class="modalDivs">
+			<img src="./images/NextStageModal.png" alt="Screenshot of next stage modal in accadamy portal">
+			<div class="modelContent">
+				<button id="closeModalAcademyPortal" type="button" class="btn btn-light">
+					<i class="closeIcon material-icons">close</i>
+				</button>
+				<h3>Build</h3>
+				<div class="modalText">
+					<p> This is a legacy code base, built using Javascript and PHP in a slim framework.
+						We pair programmed to fix a bug that caused applicants to have student status even
+						if they weren't yet one. This was fixed by adjusting the conditional to a strict
+						equals operator. We then improved the UX of the 'next stage' modal to show the stage
+						the applicant was currently on and the stage they were moving to. To do this we
+						created a wireframe and worked with the existing colour pallet.
+					</p>
+				</div>
+			</div>
+		</div>
+	</article>
+
+	<!--		///////ToDoModal////////-->
+	<article id="modalPopupToDo">
+		<div class="modalDivs">
+			<img src="./images/listed.png" alt="Screenshot of todo app">
+			<div class="modelContent">
+				<button id="closeModalToDo" type="button" class="btn btn-light">
+					<i class="closeIcon material-icons">close</i>
+				</button>
+				<h3>Build</h3>
+				<div class="modalText">
 					<p> I started by creating the API using Node.js with the Express.js framework. Then
-						I created a collection of to-dos in MongoDB and accesses them using HTTP  verbs. I
+						I created a collection of to-dos in MongoDB and accesses them using HTTP verbs. I
 						checked the POST, DELETE and PUT requests using postman and Handlebars Templating
 						Engine to check the GET requests.
 
 						To give access to the API on the front end I installed CORS, then I built the front
 						end using Material UI components. Manipulating the DOM to make the app interactive.
 					</p>
-					</div>
 				</div>
 			</div>
-		</article>
-	</body>
+		</div>
+	</article>
+</body>
+
 </html>
